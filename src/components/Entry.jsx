@@ -1,15 +1,18 @@
 function Entry(props) {
     return(
         <div className="term">
-          <dt>
-            <span className="emoji" role="img" aria-label="Tense Biceps">
-              {props.emoji}
-            </span>
-            <span>{props.name}</span>
-          </dt>
-          <dd>
-            {props.description}
-          </dd>
+          <p>
+            {props.ukrainian}
+          </p>
+          <p>
+            {props.russian}
+          </p>
+          <p>
+            {props.finnish}
+          </p>
+          <p>
+            {props.english}
+          </p>
         </div>
     )
 }

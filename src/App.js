@@ -1,7 +1,7 @@
 import './App.css';
-import daysOfWeek from './daysofweek.js';
 import Entry from './components/Entry.jsx';
 import React, { useState } from 'react';
+import daysOfWeek from './daysofweek.js';
 
 function App() {
   
@@ -25,7 +25,7 @@ function App() {
     (<Entry 
       key={word.id}
       id={word.id}
-      ukrainain={word.ukrainain}
+      ukrainian={word.ukrainian}
       russian={word.russian}
       finnish={word.finnish}
       english={word.english}
