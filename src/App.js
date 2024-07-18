@@ -2,6 +2,7 @@ import './App.css';
 import Entry from './components/Entry.jsx';
 import React, { useState } from 'react';
 import daysOfWeek from './daysofweek.js';
+import months from './months.js';
 
 function App() {
   
@@ -22,6 +23,21 @@ function App() {
       </h1>
       <dl className="dictionary">
         {daysOfWeek.map((word) => 
+    (<Entry 
+      key={word.id}
+      id={word.id}
+      ukrainian={word.ukrainian}
+      russian={word.russian}
+      finnish={word.finnish}
+      english={word.english}
+    />)
+  )}
+      </dl>
+      <h1>
+        <span>Months</span>
+      </h1>
+      <dl className="dictionary">
+        {months.map((word) => 
     (<Entry 
       key={word.id}
       id={word.id}
