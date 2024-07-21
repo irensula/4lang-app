@@ -61,6 +61,28 @@ const months = [
         russian: "сентябрь",
         finnish: "syyskuu",
         english: "September"
+      },
+      ,
+      {
+        id: 10,
+        ukrainian: "жовтень",
+        russian: "октябрь",
+        finnish: "lokakuu",
+        english: "October"
+      },
+      {
+        id: 11,
+        ukrainian: "листопад",
+        russian: "ноябрь",
+        finnish: "marraskuu",
+        english: "November"
+      },
+      {
+        id: 12,
+        ukrainian: "грудень",
+        russian: "декабрь",
+        finnish: "joulukuu",
+        english: "December"
       }
 ]
 export default months;
