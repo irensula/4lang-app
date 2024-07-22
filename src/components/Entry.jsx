@@ -1,19 +1,19 @@
 function Entry(props) {
     return(
-        <div className="term">
-          <p>
+        <tr className="term">
+          <td>
             {props.ukrainian}
-          </p>
-          <p>
+          </td>
+          <td>
             {props.russian}
-          </p>
-          <p>
+          </td>
+          <td>
             {props.finnish}
-          </p>
-          <p>
+          </td>
+          <td>
             {props.english}
-          </p>
-        </div>
+          </td>
+        </tr>
     )
 }
 

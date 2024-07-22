@@ -20,7 +20,7 @@ h1 span {
   background: #2ec2b0;
 }
 
-.dictionary {
+.row {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -29,10 +29,11 @@ h1 span {
   max-width: 90%;
 }
 
-.dictionary > .term {
-  text-align: center;
-  max-width: 20rem;
-  margin-bottom: 3rem;
+.row > .term {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 1rem;
   padding: 2rem;
   border-radius: 3px;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -40,7 +41,7 @@ h1 span {
   transition: all 100ms ease-in-out;
 }
 
-.dictionary > .term > dt {
+.row > .term > dt {
   margin-bottom: 1rem;
 }
 

@@ -1,8 +1,8 @@
 import './App.css';
 import Entry from './components/Entry.jsx';
 import React, { useState } from 'react';
-import daysOfWeek from './daysofweek.js';
-import months from './months.js';
+import daysOfWeek from './data/daysofweek.js';
+import months from './data/months.js';
 
 function App() {
   
@@ -21,7 +21,13 @@ function App() {
       <h1>
         <span>Days Of Week</span>
       </h1>
-      <dl className="dictionary">
+      <tr class="row">
+        <th>Ukraina</th>
+        <th>Venäjä</th>
+        <th>Suomi</th>
+        <th>Englanti</th>
+      </tr>
+      <table className="row">
         {daysOfWeek.map((word) => 
     (<Entry 
       key={word.id}
@@ -32,22 +38,33 @@ function App() {
       english={word.english}
     />)
   )}
-      </dl>
+      </table>
+      
+      
       <h1>
         <span>Months</span>
       </h1>
-      <dl className="dictionary">
+
+      <tr class="row">
+        <th>Ukraina</th>
+        <th>Venäjä</th>
+        <th>Suomi</th>
+        <th>Englanti</th>
+      </tr>
+
+      <table className="row">
         {months.map((word) => 
-    (<Entry 
-      key={word.id}
-      id={word.id}
-      ukrainian={word.ukrainian}
-      russian={word.russian}
-      finnish={word.finnish}
-      english={word.english}
-    />)
-  )}
-      </dl>
+          (<Entry 
+            key={word.id}
+            id={word.id}
+            ukrainian={word.ukrainian}
+            russian={word.russian}
+            finnish={word.finnish}
+            english={word.english}
+          />)
+        )}
+      </table>
+      
 
       <div className="container">
         <h1>{count}</h1>
