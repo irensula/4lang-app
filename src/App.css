@@ -104,3 +104,12 @@ button {
   font-weight: bold;
   font-size: 50px;
 }
+
+/* Task */
+form {
+  display: inline;
+  white-space: nowrap;
+}
+.taskText {
+  display: inline-block;
+}

@@ -3,6 +3,7 @@ import Entry from './components/Entry.jsx';
 import React, { useState } from 'react';
 import daysOfWeek from './data/daysofweek.js';
 import months from './data/months.js';
+import Task from './components/Task.jsx';
 
 function App() {
   
@@ -65,12 +66,14 @@ function App() {
         )}
       </table>
       
+        <Task />
 
       <div className="container">
         <h1>{count}</h1>
         <button onClick={increase} >+</button>
         <button onClick={decrease} >-</button>
       </div>
+
     </div>
   );
 }
