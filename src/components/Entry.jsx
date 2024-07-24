@@ -1,5 +1,6 @@
 function Entry(props) {
     return(
+      <tbody>
         <tr className="term">
           <td>
             {props.ukrainian}
@@ -14,6 +15,7 @@ function Entry(props) {
             {props.english}
           </td>
         </tr>
+      </tbody>
     )
 }
 

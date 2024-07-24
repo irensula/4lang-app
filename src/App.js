@@ -1,77 +1,36 @@
 import './App.css';
-import Entry from './components/Entry.jsx';
 import React, { useState } from 'react';
-import daysOfWeek from './data/daysofweek.js';
-import months from './data/months.js';
 import Task from './components/Task.jsx';
+import Months from './components/Months.jsx';
+import DaysOfWeek from './components/DaysOfWeek.jsx';
 
 function App() {
   
-  const [count, setCount] = useState(0);
-  
-  function increase() {
-    setCount(count + 1);
-  }
-  
-  function decrease() {
-    setCount(count - 1);
+  const [words, setWords] = useState([]);
+  function checkWord(inputText) {
+    setWords(prevWords => {
+      return [...prevWords, inputText];
+    });
   }
 
   return (
     <div>
-      <h1>
-        <span>Days Of Week</span>
-      </h1>
-      <tr class="row">
-        <th>Ukraina</th>
-        <th>Venäjä</th>
-        <th>Suomi</th>
-        <th>Englanti</th>
-      </tr>
-      <table className="row">
-        {daysOfWeek.map((word) => 
-    (<Entry 
-      key={word.id}
-      id={word.id}
-      ukrainian={word.ukrainian}
-      russian={word.russian}
-      finnish={word.finnish}
-      english={word.english}
-    />)
-  )}
-      </table>
       
+      <DaysOfWeek />
       
-      <h1>
-        <span>Months</span>
-      </h1>
-
-      <tr class="row">
-        <th>Ukraina</th>
-        <th>Venäjä</th>
-        <th>Suomi</th>
-        <th>Englanti</th>
-      </tr>
-
-      <table className="row">
-        {months.map((word) => 
-          (<Entry 
-            key={word.id}
-            id={word.id}
-            ukrainian={word.ukrainian}
-            russian={word.russian}
-            finnish={word.finnish}
-            english={word.english}
-          />)
-        )}
-      </table>
+      <Months />
       
-        <Task />
-
-      <div className="container">
-        <h1>{count}</h1>
-        <button onClick={increase} >+</button>
-        <button onClick={decrease} >-</button>
+      <div>
+          <ul>
+              {words.map((todoItem, index) => (
+              <Task
+                  key={index}
+                  id={index}
+                  text={todoItem}
+                  onAdd={ checkWord }
+              />
+              ))}
+          </ul>
       </div>
 
     </div>
