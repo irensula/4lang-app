@@ -1,28 +1,44 @@
-import { useState } from "react";
+// import right from "../data/task_1";
 
-const Task = (props) => {
+const Task = () => {
+    
+    const right = ["ipsum", "libero"];
+    const [right_word_1, right_word_2] = right;
+    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const word_1 = e.target.word_1.value;
+        const word_2 = e.target.word_2.value;
 
-    const [val, setVal] = useState("");
-    const click = () => {
-        alert(val)
-    }
-    const change = event => {
-        setVal(event.target.value);
+        if(word_1 === right_word_1 && word_2 === right_word_2) {
+            console.log("Correct!");
+
+        }
     }
 
     return ( 
-        <form>
+        <form onSubmit={handleSubmit}>
             <p className="taskText">Lorem</p>
             <input 
+                type="text"
+                name="word_1"
                 className="taskInput"
-                onChange={change}
-                value = {val}
+                
             />
-            <p className="taskText">dolor sit amet consectetur, adipisicing elit. Fuga aperiam animi voluptas tempore consequuntur exercitationem, suscipit sunt rem dicta similique. Libero dolorum id velit ut, quod ab quis illo quaerat!</p>
+            <p className="taskText">dolor sit amet consectetur, adipisicing elit. Fuga aperiam animi voluptas tempore consequuntur exercitationem, suscipit sunt rem dicta similique. </p>
+            <input 
+                type="text"
+                name="word_2"
+                className="taskInput"
+                
+            />
+                <p className="taskText"> dolorum id velit ut, quod ab quis illo quaerat!</p>
             <br/>
-            <button className="button" onClick = {click}>Submit</button> 
+            <button className="button">Submit</button> 
         </form> 
     );
 }
  
 export default Task;
+
+// styles

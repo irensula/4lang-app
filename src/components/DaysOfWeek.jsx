@@ -5,10 +5,9 @@ const DaysOfWeek = () => {
     return ( 
         <div>
             <h1><span>Days Of Week</span></h1>
-        
-            <table className="row">
+            <table>
                 <thead>
-                    <tr className="row">
+                    <tr className="term">
                         <th>Ukraina</th>
                         <th>Venäjä</th>
                         <th>Suomi</th>

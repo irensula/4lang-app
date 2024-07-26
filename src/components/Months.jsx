@@ -8,7 +8,7 @@ const Months = () => {
 
             <table className="row">
                 <thead>
-                    <tr className="row">
+                    <tr className="term">
                         <th>Ukraina</th>
                         <th>Venäjä</th>
                         <th>Suomi</th>
