@@ -26,6 +26,7 @@ const Task = () => {
                 
             />
             <p className="taskText">dolor sit amet consectetur, adipisicing elit. Fuga aperiam animi voluptas tempore consequuntur exercitationem, suscipit sunt rem dicta similique. </p>
+            <br/>
             <input 
                 type="text"
                 name="word_2"

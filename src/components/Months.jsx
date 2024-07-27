@@ -6,8 +6,8 @@ const Months = () => {
         <div>
             <h1><span>Months</span></h1>
 
-            <table className="row">
-                <thead>
+            <table  className="table">
+                <thead className="row">
                     <tr className="term">
                         <th>Ukraina</th>
                         <th>Venäjä</th>

@@ -19,7 +19,11 @@ h1 span {
   padding: 5px 15px;
   background: #2ec2b0;
 }
-
+.table {
+  width: 80%;
+  margin: 0 auto;
+}
+/* 
 .row {
   display: flex;
   flex-direction: column;
@@ -41,11 +45,11 @@ h1 span {
   transition: all 100ms ease-in-out;
 }
 
-.row > .term > dt {
+.row > .term > th {
   margin-bottom: 1rem;
 }
 
-dt {
+th {
   color: #2ec2b0;
   line-height: 1;
 }
@@ -53,12 +57,6 @@ dt {
 dt span {
   font-size: 200%;
   font-weight: 900;
-}
-
-.emoji {
-  margin: 0 auto 20px;
-  display: block;
-  font-size: 400%;
 }
 
 dd {
@@ -83,27 +81,7 @@ dd dl {
 dd dl .term {
   margin-bottom: 1rem;
 }
-/* number button css */
-h1 {
-  font-size: 100px;
-}
-
-.container {
-  margin: 30px auto;
-  text-align: center;
-}
-
-button {
-  display: inline-block;
-  background-color: #6bbe92;
-  border: 0;
-  width: 60px;
-  margin: 10px;
-  text-align: center;
-  color: #fff;
-  font-weight: bold;
-  font-size: 50px;
-}
+*/
 
 /* Task */
 form {

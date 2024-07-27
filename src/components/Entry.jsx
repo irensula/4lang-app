@@ -1,6 +1,6 @@
 function Entry(props) {
     return(
-        <tbody>
+        <tbody className="row">
           <tr className="term">
             <td>
               {props.ukrainian}
