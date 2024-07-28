@@ -19,7 +19,7 @@ const Task = () => {
                 type="text"
                 name="word_1"
                 className="taskInput"
-                style={{color: word_1 === "libero" ? "trueColor" : "falseColor"}} 
+                // style={{color: word_1 === "libero" ? "trueColor" : "falseColor"}} 
             />
             <p className="taskText">dolor sit amet consectetur, adipisicing elit. Fuga aperiam animi voluptas tempore consequuntur exercitationem, suscipit sunt rem dicta similique. </p>
             <br/>
@@ -27,7 +27,7 @@ const Task = () => {
                 type="text"
                 name="word_2"
                 className="taskInput"              
-                style={{color: word_2 === "libero" ? "trueColor" : "falseColor"}}  
+                // style={{color: word_2 === "libero" ? "trueColor" : "falseColor"}}  
             />
                 <p className="taskText"> dolorum id velit ut, quod ab quis illo quaerat!</p>
             <br/>
