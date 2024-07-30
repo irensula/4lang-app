@@ -1,6 +1,6 @@
-import Task from './../components/Task.jsx';
-import Months from './../components/Months.jsx';
-import DaysOfWeek from './../components/DaysOfWeek.jsx';
+import Task from './Task.jsx';
+import Months from './Months.jsx';
+import DaysOfWeek from './DaysOfWeek.jsx';
 
 const Home = () => {
     return ( 
