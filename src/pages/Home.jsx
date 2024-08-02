@@ -1,4 +1,4 @@
-import Task from './Task.jsx';
+import Exercise from './Exercises.jsx';
 import Months from './Months.jsx';
 import DaysOfWeek from './DaysOfWeek.jsx';
 
@@ -10,7 +10,7 @@ const Home = () => {
         
             <Months />
         
-            <Task />
+            <Exercise />
         </main> 
     );
 }
