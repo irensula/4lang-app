@@ -1,0 +1,30 @@
+.header {
+    height: 100vh;
+}
+.image-container {
+    width: 40%;
+    margin: 3em auto;
+    position: relative;
+}
+.image-container img {
+    width: 100%;
+}
+.flag {
+    width: 100px;
+}
+.suomi {
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+.uk {
+    position: absolute;
+    top: 80%;
+    left: 70%;
+}
+.ukraine {
+    position: absolute;
+    top: 30%;
+    left: 75%;
+}

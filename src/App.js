@@ -1,5 +1,3 @@
-import './App.css';
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home.jsx';
@@ -15,8 +13,8 @@ import Songs from './pages/Songs';
 import Navbar from './components/navbar/Navbar.jsx';
 import Footer from './components/footer/Footer.jsx';
 
-import DaysOfWeek from './pages/DaysOfWeek.jsx';
-import Months from './pages/Months.jsx';
+import './styles/reset.css';
+import './styles/main.css';
 
 function App() {
 
@@ -34,9 +32,6 @@ function App() {
           <Route path="/exercises" element={<Exercises />}/>
           <Route path="/texts" element={<Texts />}/>
           <Route path="/songs" element={<Songs />}/>
-
-          <Route path="/months" element={<Months />}/>
-          <Route path="/days-of-week" element={<DaysOfWeek />}/>
           
         </Routes>
         <Footer />
