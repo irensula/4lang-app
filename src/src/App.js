@@ -1,30 +1,33 @@
-import './App.css';
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home.jsx';
+import Topics from './pages/Topics.jsx';
 import Contacts from './pages/Contacts.jsx';
-import Task from './pages/Task.jsx';
-import DaysOfWeek from './pages/DaysOfWeek.jsx';
-import Months from './pages/Months.jsx';
+import Login from './pages/Login.jsx';
+import Topic from './pages/Topic.jsx';
 
-import Navbar from './components/navbar.js';
+import Navbar from './components/navbar/Navbar.jsx';
+import Footer from './components/footer/Footer.jsx';
+
+import './styles/reset.css';
+import './styles/main.css';
 
 function App() {
 
   return (
     <div>
-      <Navbar />
       <Router>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />}/>
+          <Route path="/topics" element={<Topics />} />
           <Route path="/contacts" element={<Contacts />}/>
-          <Route path="/months" element={<Months />}/>
-          <Route path="/days-of-week" element={<DaysOfWeek />}/>
-          <Route path="/task" element={<Task />}/>
+          <Route path="/login" element={<Login />}/>
+          <Route path="/topic/:id" element={<Topic />} />
+  
         </Routes>
+        <Footer />
       </Router>
-
     </div>
   );
 }
