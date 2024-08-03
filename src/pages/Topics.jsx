@@ -1,15 +1,22 @@
-import { NavLink } from "react-router-dom";
+import Topic from '../components/Topic.jsx';
+import { topics } from '../data/topics';
+
 
 const Topics = () => {
-    return ( <main>
-        <h1>Topics</h1>
-        <ul>
-            <li><NavLink to="/words">Words</NavLink></li>
-            <li><NavLink to="/exercises">Exercises</NavLink></li>
-            <li><NavLink to="/texts">Text</NavLink></li>
-            <li><NavLink to="/songs">Songs</NavLink></li>
-        </ul>
-    </main> );
+    return ( 
+        <main>
+            <ul className="topic-list">
+
+                {topics.map((topic, index) => {
+                    return <Topic 
+                        key={topic.id}
+                        title={topic.title} 
+                        index={index}
+                    />;
+                })}
+            </ul>
+        </main> 
+    );
 }
  
 export default Topics;

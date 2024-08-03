@@ -1,6 +1,3 @@
-import Exercise from './Exercises.jsx';
-import Months from './Months.jsx';
-import DaysOfWeek from './DaysOfWeek.jsx';
 import Header from '../components/header/Header.jsx';
 
 const Home = () => {
@@ -19,12 +16,7 @@ const Home = () => {
                 <p>Also it's extreemly important to learn finnish language because these children live in Finland.</p>
                 <p>And English language is important too, because it's an international language which is used all over the world.</p>
             </div>
-
-            <DaysOfWeek />
         
-            <Months />
-        
-            <Exercise />
         </main> 
     );
 }
