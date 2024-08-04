@@ -13,6 +13,8 @@ const Exercises = () => {
     }
     }
     return ( 
+        <div>
+        <h1>Exercise</h1>
         <form onSubmit={handleSubmit}>
             <p className="taskText">Lorem</p>
             <input 
@@ -34,7 +36,8 @@ const Exercises = () => {
             <button 
                 className="button" 
             >Submit</button> 
-        </form> 
+        </form>
+        </div>
     );
 }
  
