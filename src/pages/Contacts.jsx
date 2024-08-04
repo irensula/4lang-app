@@ -5,6 +5,8 @@ const Contacts = () => {
         <p>irensula@gmail.com</p>
         <p>Phone number</p>
         <p>+358 40 8137886</p>
+        <p>Location</p>
+        <p>Tampere, Finland</p>
     </main> );
 }
  
