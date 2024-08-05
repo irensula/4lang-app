@@ -52,7 +52,11 @@ h1 span {
     display: inline;
     white-space: nowrap;
   }
-  .taskText {
-    display: inline-block;
+  
+  .container-toggle.active {
+    display: none;
+  }
+  .buttonTest.active {
+    background-color: #95d847;
   }
   
